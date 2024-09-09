@@ -36,9 +36,10 @@ const Analysis = () => {
       JSON.parse(localStorage.getItem("visitedWebsites")) || [];
 
     const domainNames = visitedWebsites.map((site) => site.name);
+    // Converted time to minutes and round to 2 decimal places
     const timeSpent = visitedWebsites.map((site) =>
       (site.timeSpent / 60000).toFixed(2)
-    ); // Convert time to minutes and round to 2 decimal places
+    ); 
 
     // Set up chart data
     setChartData({
