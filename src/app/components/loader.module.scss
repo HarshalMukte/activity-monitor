@@ -9,5 +9,10 @@
 
     img{
         width: 225px;
+
+        @media screen and (max-width: 600px) {
+            width: 150px;
+        }
     }
+
 }

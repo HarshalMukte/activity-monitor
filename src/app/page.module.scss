@@ -38,6 +38,11 @@
         font-size: 8rem;
         font-weight: 700;
         line-height: 1.2;
+
+        @media screen and (max-width: 520px) {
+          font-size: 3rem;
+        }
+
       }
 
       .center {
